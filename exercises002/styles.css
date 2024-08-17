@@ -1,0 +1,69 @@
+/* Genel Stil Ayarları */
+body {
+  margin: 0;
+  font-family: "Montserrat", "Roboto", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header Stili */
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1.2em;
+}
+
+/* Main İçeriği Stili */
+main {
+  padding: 20px;
+  background-color: white;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+main p {
+  margin: 10px 0;
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+/* Footer Stili */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
