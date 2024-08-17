@@ -59,7 +59,7 @@ const user = (
   </div>
 );
 
-const footer = <footer>© 2023 John Doe. All rights reserved.</footer>;
+const footer = <footer>© 2024 John Doe. All rights reserved.</footer>;
 ```
 ````
 
