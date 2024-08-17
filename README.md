@@ -1,128 +1,87 @@
-// Exercises: Why React?
+````markdown
+# React Learning Journey
 
-/\*
+This repo contains exercises and notes from my process of learning React.
 
-1. What is React?
+## Contents
 
-   - React is a JavaScript library for building user interfaces, primarily for single-page applications. It's used to create reusable UI components.
+1. [What is React?](#what-is-react)
+2. [JSX](#jsx)
+3. [JSX Elements](#jsx-elements)
+4. [Internal Styles](#internal-styles)
+5. [Injecting Data into JSX](#injecting-data-into-jsx)
 
-2. What is a library?
+## What is React?
 
-   - A library is a collection of pre-written code that developers can use to optimize tasks. It provides specific functionalities that can be utilized within an application.
+- React is a JavaScript library for building user interfaces.
+- It's ideal for single-page applications (SPAs).
+- Uses a component-based architecture.
+- Latest stable version: 18.x.x (as of August 2023)
 
-3. What is a single page application?
+### Key Concepts
 
-   - A single-page application (SPA) is a web application that interacts with the user by dynamically rewriting the current page rather than loading entire new pages from the server.
+- **Library**: A collection of pre-written code that developers can use.
+- **Single-Page Application (SPA)**: A web application that dynamically rewrites the current page instead of loading new pages from the server.
+- **Component**: An independent, reusable piece of UI in a React application.
+- **DOM**: Programming interface for web documents.
+- **Virtual DOM**: A lightweight copy of the actual DOM used by React to improve performance.
 
-4. What is a component?
+## JSX
 
-   - A component is an independent, reusable piece of UI in a React application. Components can be functional or class-based.
+JSX is a syntax extension that allows you to write HTML-like syntax within JavaScript.
 
-5. What is the latest version of React?
+### HTML and JSX
 
-   - The latest version of React is always evolving. As of August 2024, the latest stable version is 18.x.x.
+- **HTML Element**: A part of a webpage defined by a start tag, end tag, and content in between.
+- **Self-Closing HTML Element**: An element written with a slash before the closing angle bracket, e.g., `<img />`, `<br />`.
+- **HTML Attributes**: Properties that provide additional information about elements, such as `class`, `id`, `src`, `href`, `alt`.
 
-6. What is DOM?
+### Babel and Transpiler
 
-   - DOM (Document Object Model) is a programming interface for web documents. It represents the structure of a document and allows scripts to manipulate its content and structure.
+- **Babel**: A JavaScript compiler that translates modern JavaScript and JSX syntax into code compatible with older browsers.
+- **Transpiler**: A tool that converts source code from one programming language to another with a similar level of abstraction.
 
-7. What is React Virtual DOM?
+## JSX Elements
 
-   - The React Virtual DOM is a lightweight copy of the actual DOM. React uses it to determine what changes need to be made to the actual DOM, improving performance.
+JSX elements represent React elements that can be rendered in the DOM.
 
-8. What does a web application or a website(composed of) have?
-   - A web application or website typically consists of HTML, CSS, and JavaScript. It may also include images, media, APIs, and backend services.
-     \*/
+### Examples
 
-// Exercises: Why React?
+```jsx
+const name = <h1>John Doe</h1>;
 
-/\*
-
-1. Why did you choose to use React?
-
-   - React is chosen for its component-based architecture, which promotes reusability and maintainability. It also has a large ecosystem, strong community support, and excellent performance due to its Virtual DOM.
-
-2. What measures do you use to know popularity?
-
-   - Popularity can be measured by the number of GitHub stars, npm downloads, job postings, and developer surveys.
-
-3. What is more popular, React or Vue?
-   - React is generally more popular than Vue. It has a larger community, more job opportunities, and is used by more large-scale companies.
-     \*/
-
-// Exercises: JSX
-
-/\*
-
-1. What is an HTML element?
-
-   - An HTML element is a part of a webpage defined by a start tag, end tag, and the content in between.
-
-2. How to write a self-closing HTML element?
-
-   - A self-closing HTML element is written with a slash before the closing angle bracket, e.g., <img />, <br />.
-
-3. What is an HTML attribute? Write some of them.
-
-   - An HTML attribute provides additional information about an element. Examples include `class`, `id`, `src`, `href`, `alt`.
-
-4. What is JSX?
-
-   - JSX is a syntax extension for JavaScript that allows you to write HTML directly within JavaScript code.
-
-5. What is Babel?
-
-   - Babel is a JavaScript compiler that translates modern JavaScript and JSX syntax into code that is compatible with older browsers.
-
-6. What is a transpiler?
-   - A transpiler converts source code from one programming language into another language with a similar level of abstraction.
-     \*/
-
-// Exercises: JSX Elements
-
-/\*
-
-1. What is a JSX element?
-
-   - A JSX element is an element written in JSX syntax, representing a React element that can be rendered in the DOM.
-
-2. Write your name in a JSX element and store it in a name variable.
-
-   const name = <h1>Aytekin Kaplan</h1>;
-
-3. Write a JSX element which displays your full name, country, title, gender, email, phone number. Use h1 for the name and p for the rest of the information and store it in a user variable.
-
-```js
 const user = (
   <div>
-    <h1>Aytekin Kaplan</h1>
-    <p>Country: Turkey</p>
-    <p>Title: Fullstack Developer</p>
-    <p>Gender: Male</p>
-    <p>Email: ytknkpln@gmail.com</p>
+    <h1>John Doe</h1>
+    <p>Country: USA</p>
+    <p>Title: Frontend Developer</p>
+    <p>Email: john@example.com</p>
   </div>
 );
+
+const footer = <footer>© 2023 John Doe. All rights reserved.</footer>;
 ```
+````
 
-4. Write a footer JSX element.
+## Internal Styles
 
-```js
-const footer = <footer>© 2024 Aytekin Kaplan. All rights reserved.</footer>;
-```
+Styles can be applied directly to JSX elements using JavaScript objects.
 
-1. Create a style object for the main JSX.
+### Examples
 
-```js
+```jsx
 const mainStyle = {
   backgroundColor: "#f4f4f4",
   padding: "20px",
   fontFamily: "Arial, sans-serif",
 };
-```
 
-2. Create a style object for the footer and app JSX.
+const headerStyle = {
+  color: "#333",
+  fontSize: "2em",
+  textAlign: "center",
+};
 
-```js
 const footerStyle = {
   backgroundColor: "#333",
   color: "#fff",
@@ -134,70 +93,20 @@ const footerStyle = {
 };
 ```
 
-```js
-const appStyle = {
-  margin: "0 auto",
-  maxWidth: "960px",
-};
-```
+## Injecting Data into JSX
 
-3. Add more styles to the JSX elements.
+JSX allows you to inject dynamic data (strings, numbers, booleans, arrays, objects) into your elements.
 
-```js
-const headerStyle = {
-  color: "#333",
-  fontSize: "2em",
-  textAlign: "center",
-  margin: "10px 0",
-};
+### Example
 
-const paragraphStyle = {
-  lineHeight: "1.6",
-  marginBottom: "15px",
-};
-
-// Exercises: Internal Styles
-```
-
-1. Apply different styles to your JSX elements.
-
-```js
-const headerStyle = {
-  backgroundColor: "#282c34",
-  padding: "20px",
-  color: "white",
-  textAlign: "center",
-};
-
-const footerStyle = {
-  backgroundColor: "#20232a",
-  color: "#61dafb",
-  textAlign: "center",
-  padding: "10px",
-  position: "fixed",
-  bottom: "0",
-  width: "100%",
-};
-
-const appStyle = {
-  maxWidth: "600px",
-  margin: "0 auto",
-  padding: "20px",
-};
-
-// Exercise: Inject data to JSX
-```
-
-1. Practice how to make JSX element and injecting dynamic data (string, number, boolean, array, object).
-
-```js
-const name = "Aytekin Kaplan";
+```jsx
+const name = "John Doe";
 const age = 30;
 const isDeveloper = true;
 const skills = ["JavaScript", "React", "Node.js"];
 const contact = {
-  email: "ytknkpln@gmail.com",
-  phone: "+905131674489",
+  email: "john@example.com",
+  phone: "+1234567890",
 };
 
 const user = (
@@ -210,4 +119,10 @@ const user = (
     <p>Phone: {contact.phone}</p>
   </div>
 );
+```
+
+This README provides an overview of key React concepts and includes code examples for JSX, styling, and data injection.
+
+```
+
 ```
