@@ -107,107 +107,107 @@ const user = (
 4. Write a footer JSX element.
 
 ```js
-   const footer = <footer>© 2024 Aytekin Kaplan. All rights reserved.</footer>;
-   \*/
-
-// Exercises: Inline Style
-
-/\*
+const footer = <footer>© 2024 Aytekin Kaplan. All rights reserved.</footer>;
 ```
 
 1. Create a style object for the main JSX.
 
-   const mainStyle = {
-   backgroundColor: '#f4f4f4',
-   padding: '20px',
-   fontFamily: 'Arial, sans-serif'
-   };
+```js
+const mainStyle = {
+  backgroundColor: "#f4f4f4",
+  padding: "20px",
+  fontFamily: "Arial, sans-serif",
+};
+```
 
 2. Create a style object for the footer and app JSX.
 
-   const footerStyle = {
-   backgroundColor: '#333',
-   color: '#fff',
-   textAlign: 'center',
-   padding: '10px',
-   position: 'fixed',
-   bottom: '0',
-   width: '100%'
-   };
+```js
+const footerStyle = {
+  backgroundColor: "#333",
+  color: "#fff",
+  textAlign: "center",
+  padding: "10px",
+  position: "fixed",
+  bottom: "0",
+  width: "100%",
+};
+```
 
-   const appStyle = {
-   margin: '0 auto',
-   maxWidth: '960px'
-   };
+```js
+const appStyle = {
+  margin: "0 auto",
+  maxWidth: "960px",
+};
+```
 
 3. Add more styles to the JSX elements.
 
-   const headerStyle = {
-   color: '#333',
-   fontSize: '2em',
-   textAlign: 'center',
-   margin: '10px 0'
-   };
+```js
+const headerStyle = {
+  color: "#333",
+  fontSize: "2em",
+  textAlign: "center",
+  margin: "10px 0",
+};
 
-   const paragraphStyle = {
-   lineHeight: '1.6',
-   marginBottom: '15px'
-   };
-   \*/
+const paragraphStyle = {
+  lineHeight: "1.6",
+  marginBottom: "15px",
+};
 
 // Exercises: Internal Styles
-
-/\*
+```
 
 1. Apply different styles to your JSX elements.
 
-   const headerStyle = {
-   backgroundColor: '#282c34',
-   padding: '20px',
-   color: 'white',
-   textAlign: 'center'
-   };
+```js
+const headerStyle = {
+  backgroundColor: "#282c34",
+  padding: "20px",
+  color: "white",
+  textAlign: "center",
+};
 
-   const footerStyle = {
-   backgroundColor: '#20232a',
-   color: '#61dafb',
-   textAlign: 'center',
-   padding: '10px',
-   position: 'fixed',
-   bottom: '0',
-   width: '100%'
-   };
+const footerStyle = {
+  backgroundColor: "#20232a",
+  color: "#61dafb",
+  textAlign: "center",
+  padding: "10px",
+  position: "fixed",
+  bottom: "0",
+  width: "100%",
+};
 
-   const appStyle = {
-   maxWidth: '600px',
-   margin: '0 auto',
-   padding: '20px'
-   };
-   \*/
+const appStyle = {
+  maxWidth: "600px",
+  margin: "0 auto",
+  padding: "20px",
+};
 
 // Exercise: Inject data to JSX
-
-/\*
+```
 
 1. Practice how to make JSX element and injecting dynamic data (string, number, boolean, array, object).
 
-   const name = 'Aytekin Kaplan';
-   const age = 30;
-   const isDeveloper = true;
-   const skills = ['JavaScript', 'React', 'Node.js'];
-   const contact = {
-   email: 'ytknkpln@gmail.com',
-   phone: '+905432634397'
-   };
+```js
+const name = "Aytekin Kaplan";
+const age = 30;
+const isDeveloper = true;
+const skills = ["JavaScript", "React", "Node.js"];
+const contact = {
+  email: "ytknkpln@gmail.com",
+  phone: "+905131674489",
+};
 
-   const user = (
-   <div>
-   <h1>{name}</h1>
-   <p>Age: {age}</p>
-   <p>Is Developer: {isDeveloper.toString()}</p>
-   <p>Skills: {skills.join(', ')}</p>
-   <p>Email: {contact.email}</p>
-   <p>Phone: {contact.phone}</p>
-   </div>
-   );
-   \*/
+const user = (
+  <div>
+    <h1>{name}</h1>
+    <p>Age: {age}</p>
+    <p>Is Developer: {isDeveloper.toString()}</p>
+    <p>Skills: {skills.join(", ")}</p>
+    <p>Email: {contact.email}</p>
+    <p>Phone: {contact.phone}</p>
+  </div>
+);
+```
