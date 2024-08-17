@@ -92,16 +92,18 @@
 
 3. Write a JSX element which displays your full name, country, title, gender, email, phone number. Use h1 for the name and p for the rest of the information and store it in a user variable.
 
-   const user = (
-     <div>
-       <h1>Aytekin Kaplan</h1>
-       <p>Country: Turkey</p>
-       <p>Title: Fullstack Developer</p>
-       <p>Gender: Male</p>
-       <p>Email: ytknkpln@gmail.com</p>
-       <p>Phone: +905432634397</p>
-     </div>
-   );
+```js
+const user = (
+  <div>
+    <h1>Aytekin Kaplan</h1>
+    <p>Country: Turkey</p>
+    <p>Title: Fullstack Developer</p>
+    <p>Gender: Male</p>
+    <p>Email: ytknkpln@gmail.com</p>
+    <p>Phone: +905432634397</p>
+  </div>
+);
+```
 
 4. Write a footer JSX element.
 
