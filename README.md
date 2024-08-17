@@ -122,7 +122,3 @@ const user = (
 ```
 
 This README provides an overview of key React concepts and includes code examples for JSX, styling, and data injection.
-
-```
-
-```
