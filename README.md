@@ -100,19 +100,20 @@ const user = (
     <p>Title: Fullstack Developer</p>
     <p>Gender: Male</p>
     <p>Email: ytknkpln@gmail.com</p>
-    <p>Phone: +905432634397</p>
   </div>
 );
 ```
 
 4. Write a footer JSX element.
 
+```js
    const footer = <footer>© 2024 Aytekin Kaplan. All rights reserved.</footer>;
    \*/
 
 // Exercises: Inline Style
 
 /\*
+```
 
 1. Create a style object for the main JSX.
 
