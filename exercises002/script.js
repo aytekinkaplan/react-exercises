@@ -26,7 +26,6 @@ const footer = (
     </p>
   </footer>
 );
-
 const App = () => (
   <React.Fragment>
     {header}
